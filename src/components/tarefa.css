@@ -1,0 +1,22 @@
+.tarefa {
+  background: #f0f4ff;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  transition: background 0.3s;
+}
+
+.tarefa.concluida {
+  background: #d4ffd6;
+  text-decoration: line-through;
+  color: #888;
+}
+
+.tarefa h2 {
+  margin: 0 0 8px 0;
+}
+
+.tarefa p {
+  margin: 4px 0;
+}

@@ -1,0 +1,18 @@
+.product-card {
+  background: #fffbe7;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  border: 1px solid #ffe082;
+}
+
+.product-card h2 {
+  margin: 0 0 8px 0;
+}
+
+.product-card .price {
+  color: #b28704;
+  font-weight: bold;
+  margin-bottom: 8px;
+}

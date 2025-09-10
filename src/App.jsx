@@ -1,27 +1,41 @@
 import './App.css';
+import ProductCard from './components/ProductCard';
 
 function App() {
+  const products = [
+    {
+      id: 1,
+      name: 'Camiseta React',
+      price: 59.9,
+      description: 'Camiseta confortável com estampa React.',
+    },
+    {
+      id: 2,
+      name: 'Caneca Dev',
+      price: 29.9,
+      description: 'Caneca personalizada para desenvolvedores.',
+    },
+    {
+      id: 3,
+      name: 'Mouse Gamer',
+      price: 99.9,
+      description: 'Mouse ergonômico com iluminação RGB.',
+    },
+  ];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src="Octocat.png" className="App-logo" alt="logo" />
-        <p>
-          GitHub Codespaces <span className="heart">♥️</span> React
-        </p>
-        <p className="small">
-          Edit <code>src/App.jsx</code> and save to reload.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </p>
-      </header>
+      <h1>Lista de Produtos</h1>
+      <div>
+        {products.map((product) => (
+          <ProductCard
+            key={product.id}
+            name={product.name}
+            price={product.price}
+            description={product.description}
+          />
+        ))}
+      </div>
     </div>
   );
 }
