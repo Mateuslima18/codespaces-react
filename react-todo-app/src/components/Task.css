@@ -1,0 +1,25 @@
+.background {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.task-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.task-assignee {
+  color: #555;
+}
+
+.task-status {
+  font-style: italic;
+  color: green;
+}
+
+.task-completed {
+  text-decoration: line-through;
+  color: gray;
+}
